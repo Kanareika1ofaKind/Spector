@@ -1,0 +1,278 @@
+body {
+  background-color: #faf1e6;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+h1, h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+}
+
+.container {
+  display: flex;
+}
+
+.item {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Dancing Script', cursive;
+  flex: 1;
+  margin: 5px;
+  position: relative;
+}
+
+h4 {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  background-color: #fff;
+  color: #000;
+  font-size: 0;
+}
+
+.description {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  background-color: #fff;
+  color: #000;
+  font-size: 0;
+
+}
+.price {
+    position: absolute;
+  bottom: 100px;
+  left: 40px;
+  background-color: #fff;
+  color: #000;
+  font-size: 0;
+}
+
+.selected {
+  flex: 4;
+}
+
+.selected h4 {
+  font-size: 40px;
+  transition: all 1s ease-in;
+}
+
+.selected .description {
+  font-size: 20px;
+  transition: all 1s ease-in;
+}
+
+.selected .price {
+  font-size: 35px;
+  transition: all 1s ease-in;
+}
+
+label {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
+.text-input {
+  background-color: #faf1e6;
+  border: none;
+  padding: 12px 20px;
+}
+.btn {
+   font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  background-color: #00adb5;
+  flex: 1;
+}
+
+
+
+/* Neon-Lighning */
+.display1 {
+  background-image: url(img/modernNeonA.png);
+}
+
+.display2 {
+  background-image: url(img/modernNeonB.jpeg);
+}
+
+.display3 {
+  background-image: url(img/neonCustom.png);
+}
+
+.display4 {
+  background-image: url(img/neonCustomAce.png);
+}
+
+/* Foyer */
+.dispF1 {
+  background-image: url(img/foyerA.png);
+}
+
+.dispF2 {
+  background-image: url(img/foyerAce.png);
+}
+.dispF3 {
+  background-image: url(img/foyerB.jpeg);
+}
+.dispF4 {
+  background-image: url(img/foyerC.jpeg);
+}
+.dispF5 {
+  background-image: url(img/foyerD.jpeg);
+}
+.dispF6 {
+  background-image: url(img/foyerE.jpeg);
+}
+
+/* Sofa */
+.dispRaf1 {
+  background-image: url(img/rafael.jpg);
+}
+.dispRaf2 {
+  background-image: url(img/ramualdo.png);
+}
+.dispRaf3 {
+  background-image: url(img/don_salvatore.jpg);
+}
+.dispRaf4 {
+  background-image: url(img/ludovik_xiv.jpg);
+}
+.dispRaf5 {
+  background-image: url(img/victoria.jpeg);
+}
+.dispRaf6 {
+  background-image: url(img/sheldon.jpeg);
+}
+.dispRaf6 {
+  background-image: url(img/chernaya_panteraA.jpeg);
+}
+
+/* Kitchen */
+.displayS1{
+   background-image: url(img/kitchenA.jpeg); 
+}
+.displayS2{
+   background-image: url(img/kitchenB.jpeg); 
+}
+.displayS3{
+   background-image: url(img/kitchenC.png); 
+}
+.displayS4{
+   background-image: url(img/kitchenD.jpeg); 
+}
+.displayS5{
+   background-image: url(img/kitchenE.jpeg); 
+}
+
+/* Closet */
+.displayC1 {
+  background-image: url(img/closetA.jpeg); 
+
+}
+.displayC2 {
+  background-image: url(img/closetb.jpeg); 
+
+}
+.displayC3 {
+  background-image: url(img/closetC.png); 
+
+}
+.displayC4 {
+  background-image: url(img/closetD.jpeg); 
+
+}
+.displayC5 {
+  background-image: url(img/closetE.jpeg); 
+
+}
+
+
+/* Outdoor */
+.disSpace1 {
+  background-image: url(img/outdoorSetA.png);
+}
+.disSpace2 {
+  background-image: url(img/outdoorSetB1.png);
+}
+.disSpace3 {
+  background-image: url(img/outdoorSetC.jpeg);
+}
+.disSpace4 {
+  background-image: url(img/outdoorSetD.jpeg);
+}
+.disSpace5 {
+  background-image: url(img/outdoorSetE.png);
+}
+
+
+
+@media all and (max-width: 800px) {
+  h1, h4 {
+    font-size: 40px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    flex: none;
+    height: 10vh;
+    width: 100%;
+  }
+  h4 {
+    top: 0;
+    left: 40px;
+
+  }
+  .description {
+    top: 90px;
+    left: 40px;
+  }
+  .price {
+    bottom: 10px;
+    left: 40px;
+    /* font-size: 25px;   */
+  }
+  .selected {
+    height: 40vh;
+    min-height: 350px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  h1, h4 {
+    font-size: 20px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    flex: none;
+    height: 10vh;
+    width: 100%;
+  }
+  h4 {
+    top: 0;
+    left: 20px;
+
+  }
+  .description {
+    top: 70px;
+    left: 20px;
+  }
+  .price {
+    bottom: 5px;
+    left: 20px;
+    /* font-size: 25px;   */
+  }
+  .selected {
+    height: 30vh;
+    min-height: 250px;
+  }
+}
